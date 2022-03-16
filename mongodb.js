@@ -10,13 +10,13 @@ mongoose.connect(dbURI, () => {
 }, e => console.error(e));
 
 // newScore();
-// async function newScore() {
-//     const score = await Highscores.create({ name: "Calvin", score: 250 });
-//     console.log(score);
-// }
+export async function newScore(playerName, playerScore) {
+    const score = await Highscores.create({ name: playerName, score: playerScore });
+    console.log(score);
+}
 
 seeScores();
-async function seeScores() {
+export async function seeScores() {
     try {
         const scores = await Highscores.where('score').gt(0);
         console.log(scores);

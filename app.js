@@ -5,6 +5,9 @@ import { gaming100, gaming250, gaming500, gaming750 } from '/questions/gaming-qu
 import { sports100, sports250, sports500, sports750 } from '/questions/sports-questions.js';
 import { science100, science250, science500, science750 } from '/questions/science-questions.js';
 // ==============
+// Import Mongoose functions
+import * as MongFun from './mongodb.js';
+// ==============
 
 // Set global variables
 let score = 0;
@@ -18,6 +21,9 @@ let questionsRemain = 10;
 // Global categories and values
 var categoryNames = ['Animals', 'History', 'Gaming', 'Science', 'Sports'];
 var priceValue = ['100', '250', '500', '750'];
+// Mongo Variables
+let playerName;
+let playerScore;
 // ==============
 
 // Display score
