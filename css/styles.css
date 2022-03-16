@@ -1,0 +1,90 @@
+/* Title & Score display section */
+.title h1 {
+    text-align: center;
+}
+
+#score {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Content display section */
+.content {
+    display: flex;
+}
+
+#categories, #question-section {
+    flex: 1;
+}
+
+/* Categories display section */
+#categories {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+.column button {
+    margin: auto;
+}
+
+.value-btn {
+    display: block;
+    padding: 20px 30px;
+    margin-bottom: 10px !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(29, 29, 196);
+    color: white;
+}
+
+.value-btn:disabled {
+    background-color: gray;
+    color: lightgray;
+}
+
+/* Question & answers display section */
+#question-section {
+    text-align: center;
+    position: relative;
+}
+
+#timer {
+    height: 50px;
+    margin-top: 50px;
+}
+
+#timer h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#question h3, #displayMsg {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#answerChoices button {
+    font-size: 1.3em;
+    margin: 0 20px;
+}
+
+#questionsRemain {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reset Button */
+.resetBtn {
+    background-color: orange;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}

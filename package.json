@@ -2,15 +2,15 @@
   "name": "Jeopardy-Trivia",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "mongodb.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon mongodb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^6.2.5"
+    "mongoose": "^6.2.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
