@@ -8,25 +8,51 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-    <div class="title">
-        <h1>JEOPARDY TRIVIA!</h1>
+    <div id="startscreen">
+        <div class="title">
+            <h1>JEOPARDY TRIVIA!</h1>
+        </div>
+
+        <div>
+            <div id="instructions">
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Pick a category and a point value</li>
+                    <li>Click on the chosen box for the question</li>
+                    <li>You will be given 15 seconds to answer the question</li>
+                    <li>You must choose an answer or wait till time is up before choosing another question</li>
+                    <li>If question is answered correctly, you will be awarded the points for that question to your total score</li>
+                    <li>If answered incorrectly or if time runs out, you will lose that questions point worth from your total score</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Ready to Play?</h2>
+                <button id="start-game-btn">Start</button>
+            </div>
+        </div>
     </div>
 
-    <h2 id="score"></h2>
+    <div id="playscreen">
+        <div class="title">
+            <h1>JEOPARDY TRIVIA!</h1>
+        </div>
 
-    <div class="content">
-        <div id="categories"></div>
+        <h2 id="score"></h2>
 
-        <div id="question-section">
-            <div id="timer"></div>
-            <div id="question"></div>
-            <div id="answerChoices"></div>
-            <div id="displayMsg"></div>
-            <div id="questionsRemain"></div>
+        <div class="content">
+            <div id="categories"></div>
+
+            <div id="question-section">
+                <div id="timer"></div>
+                <div id="question"></div>
+                <div id="answerChoices"></div>
+                <div id="displayMsg"></div>
+                <div id="questionsRemain"></div>
+            </div>
         </div>
     </div>
 </body>
 
-<script src="mongodb.js" type="module"></script>
 <script src="app.js" type="module"></script>
 </html>

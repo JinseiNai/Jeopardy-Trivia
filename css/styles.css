@@ -1,3 +1,8 @@
+/* Displaying different sections */
+#playscreen {
+    display: none;
+}
+
 /* Title & Score display section */
 .title h1 {
     text-align: center;
