@@ -12,7 +12,7 @@ let theQuestion;
 let theAnswer;
 let theValue;
 let intervalId;
-let timer = 15;
+let timer = 16;
 let ready = true;
 let questionsRemain = 10;
 // Global categories and values
@@ -22,10 +22,13 @@ var priceValue = ['100', '250', '500', '750'];
 // Different screen variables
 const startScreen = document.getElementById('startscreen');
 const playScreen = document.getElementById('playscreen');
+const questionScreen = document.getElementById('question-section');
+const categoriesScreen = document.getElementById('categories');
 // ==============
 
 // Global Event Listener
 document.getElementById('start-game-btn').addEventListener('click', startGame);
+
 
 // Display score
 function showScore() {
@@ -42,7 +45,7 @@ function createCategory() {
         column.setAttribute('class', 'column');
 
         // Create a title for this section
-        let title = document.createElement('h2');
+        let title = document.createElement('h3');
         title.innerHTML = categoryNames[i];
 
         // Display on div #categories
@@ -142,6 +145,7 @@ function answeredCorrect() {
     showScore();
     reduceRemain();
     document.getElementById('displayMsg').appendChild(msg);
+    nextQuestion();
 }
 
 // Show a message when wrong
@@ -151,6 +155,7 @@ function answeredWrong() {
     showScore();
     reduceRemain();
     document.getElementById('displayMsg').appendChild(msg);
+    nextQuestion();
 }
 // ==============
 
@@ -172,7 +177,7 @@ function decrement() {
 }
 
 function stopTimer() {
-    timer = 15;
+    timer = 16;
     clearInterval(intervalId);
 }
 // ==============
@@ -243,6 +248,7 @@ function resetAll() {
     showScore();
     questionsLeft();
     setReady();
+    categoriesScreen.style.display = 'flex';
 }
 
 // Create a 'Play Again' button which will reset the game
@@ -258,6 +264,34 @@ function resetBtn() {
 function startGame() {
     startScreen.style.display = 'none';
     playScreen.style.display = 'block';
+
+    let valueBtn = document.querySelectorAll('.value-btn');
+    console.log(valueBtn);
+    valueBtn.forEach(btn => {
+        btn.addEventListener('click', showQuestionSection);
+    })
+}
+
+function showQuestionSection() {
+    categoriesScreen.style.display = 'none';
+    questionScreen.style.display = 'block';
+}
+
+function showCategories() {
+    categoriesScreen.style.display = 'flex';
+    questionScreen.style.display = 'none';
+}
+
+function nextQuestion() {
+    if(questionsRemain !== 0) {
+        let nextBtn = document.createElement('button');
+        nextBtn.innerHTML = 'Next Question';
+        nextBtn.onclick = showCategories;
+        nextBtn.setAttribute('class', 'nextQuestion-btn');
+
+        document.getElementById('displayMsg').appendChild(nextBtn);
+    }
+    
 }
 
 // Calling start functions

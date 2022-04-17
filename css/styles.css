@@ -1,5 +1,11 @@
 /* Displaying different sections */
-#playscreen {
+/* Instructions */
+#instructions h3, #startgame {
+    text-align: center;
+}
+
+/* Play screen */
+#playscreen, #question-section {
     display: none;
 }
 
@@ -14,9 +20,9 @@
 }
 
 /* Content display section */
-.content {
+/* .content {
     display: flex;
-}
+} */
 
 #categories, #question-section {
     flex: 1;
@@ -29,9 +35,10 @@
 
 .column {
     flex: 1;
+    border: 1px solid #000;
 }
 
-.column h2 {
+.column h3 {
     text-align: center;
 }
 
@@ -41,7 +48,7 @@
 
 .value-btn {
     display: block;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     margin-bottom: 10px !important;
     font-size: 1.3em;
     font-weight: bold;
@@ -81,7 +88,8 @@
 }
 
 #questionsRemain {
-    position: absolute;
+    /* position: absolute; */
+    text-align: center;
     bottom: 0;
     width: 100%;
 }
