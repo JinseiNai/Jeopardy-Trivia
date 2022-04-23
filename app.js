@@ -1,9 +1,9 @@
 // Import questions
-import { animals100, animals250, animals500, animals750 } from '/questions/animal-questions.js';
-import { history100, history250, history500, history750 } from '/questions/history-questions.js';
-import { gaming100, gaming250, gaming500, gaming750 } from '/questions/gaming-questions.js';
-import { sports100, sports250, sports500, sports750 } from '/questions/sports-questions.js';
-import { science100, science250, science500, science750 } from '/questions/science-questions.js';
+import { animals100, animals250, animals500, animals750 } from './questions/animal-questions.js';
+import { history100, history250, history500, history750 } from './questions/history-questions.js';
+import { gaming100, gaming250, gaming500, gaming750 } from './questions/gaming-questions.js';
+import { sports100, sports250, sports500, sports750 } from './questions/sports-questions.js';
+import { science100, science250, science500, science750 } from './questions/science-questions.js';
 // ==============
 
 // Set global variables
