@@ -2,9 +2,9 @@
   "name": "Jeopardy-Trivia",
   "version": "1.0.0",
   "description": "",
-  "main": "mongodb.js",
+  "main": "app.js",
   "scripts": {
-    "devStart": "nodemon mongodb.js"
+    "devStart": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
