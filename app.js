@@ -142,6 +142,7 @@ function clearEverything() {
 function answeredCorrect() {
     let msg = document.createElement('p');
     msg.innerHTML = `Correct! You gained $${theValue}`;
+    msg.setAttribute('class', 'correct');
     showScore();
     reduceRemain();
     document.getElementById('displayMsg').appendChild(msg);
@@ -152,6 +153,7 @@ function answeredCorrect() {
 function answeredWrong() {
     let msg = document.createElement('p');
     msg.innerHTML = `Wrong... You lost $${theValue}`;
+    msg.setAttribute('class', 'wrong');
     showScore();
     reduceRemain();
     document.getElementById('displayMsg').appendChild(msg);
