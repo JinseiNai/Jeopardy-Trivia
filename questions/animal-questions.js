@@ -43,7 +43,9 @@ export let animals500 = [
     },
     {
         question: "What is the only mammal born with horns?",
-        answers: ["Giraffe", "Rhino", "Moose", "Walrus"]
+        answers: ["Giraffe", "Rhino", "Moose", "Walrus"],
+        correctAnswer: "Giraffe",
+        value: 500
     }
 ];
 
