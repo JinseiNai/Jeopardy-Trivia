@@ -4,6 +4,10 @@ body {
     color: #fff;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Displaying different sections */
 /* Instructions */
 #instructions h3, #startgame {
