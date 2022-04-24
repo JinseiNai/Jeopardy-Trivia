@@ -1,7 +1,19 @@
+/* Global */
+body {
+    background-color:#262b54;
+    color: #fff;
+}
+
 /* Displaying different sections */
 /* Instructions */
 #instructions h3, #startgame {
     text-align: center;
+}
+
+#start-game-btn {
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 /* Play screen */
@@ -17,12 +29,8 @@
 #score {
     text-align: center;
     font-size: 3em;
+    margin: 20px 0;
 }
-
-/* Content display section */
-/* .content {
-    display: flex;
-} */
 
 #categories, #question-section {
     flex: 1;
@@ -48,7 +56,6 @@
 
 .value-btn {
     display: block;
-    /* padding: 20px 30px; */
     margin-bottom: 10px !important;
     font-size: 1.3em;
     font-weight: bold;
@@ -69,7 +76,7 @@
 
 #timer {
     height: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #timer h1 {
@@ -96,10 +103,16 @@
 }
 
 #questionsRemain {
-    /* position: absolute; */
     text-align: center;
     bottom: 0;
     width: 100%;
+}
+
+/* Next Question Button */
+.nextQuestion-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /* Reset Button */
