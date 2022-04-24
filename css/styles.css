@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+#instructions ul li {
+    margin: 5px 0;
+}
+
 #start-game-btn {
     padding: 5px 10px;
     font-size: 1.2em;
@@ -121,4 +125,18 @@ body {
     padding: 10px 20px;
     font-size: 1.3em;
     font-weight: bold;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 426px) {
+    #instructions {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #instructions {
+        width: 50%;
+    }
 }
