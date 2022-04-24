@@ -54,7 +54,7 @@ export let history500 = [
         value: 500
     },
     {
-        question: "Henry the Eigth had how many wives?",
+        question: "Henry the Eighth had how many wives?",
         answers: [3, 6, 8, 10],
         correctAnswer: 6,
         value: 500

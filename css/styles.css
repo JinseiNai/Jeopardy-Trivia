@@ -144,6 +144,14 @@ button:hover {
     #answerChoices button {
         min-width: 35%;
     }
+
+    .column h3 {
+        font-size: 14px;
+    }
+
+    .value-btn {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 426px) {
